@@ -1,0 +1,94 @@
+<!--
+ 		.SYNOPSIS
+ 				
+ 				This is Error  HTML page which will be displayed if log file is missing..		
+
+ 		. Description
+				IF there is no logs file available instead of displaying very wiered error message user will able to see this messsage.
+		
+
+		.INPUTS
+				None
+		.OUTPUTS
+                Display Error on second html page if found any.
+        
+
+        .NOTES
+        		Author: Amol Chaudhari
+        		Creation Date: 10-02-2021
+        		purpose: CIS Automation OJT Task
+        		Assigned By: Nikhil Kumar
+
+        .Example
+        		To run this Web Application type: Python main.py 
+        		Then open any browser and type : http://127.0.0.1:5000/ 
+        		!-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+
+	<title>CIS Automation Assesment</title>
+	<style>
+		input{
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			  color: #010D0C;
+			  font-size: 16px;
+	}
+	input[type=submit]:hover {
+	    background-color: #45a049;
+	}
+
+#label{
+	font-size: 16px;
+}
+.Container{
+			position: fixed;
+			height: 150px;
+			width: 500px;
+			bottom: 350px;
+			right: 600px;
+			color: blue;
+
+
+		}
+.maindiv{
+	background-color:powderblue;
+	position: fixed;
+	height: 90%;
+	width: 700px;
+	top: 50px;
+	right: 400px;
+}
+	
+	</style>
+</head>
+<body style="background-color: #052623" >
+	<div class="maindiv"> 
+	
+	<div class="container">
+		<br>
+		<br>
+		<p><a style="font-size: 20px;font-weight: 900; color:#1E064F;font-family: 'Comic sans MS'" href="{{ url_for('home') }}">HOME</a></p>
+		<br>
+		<h1 style="font-size: 26px; font-family: 'Comic sans MS'" >Error: </h1><br>
+		
+		<h3 style="font-size: 26px;color:#380F8C; font-family: 'Comic sans MS'">  Log Files is not there checked location of Log Files</h3>
+
+		
+	</div>
+	
+</div>
+
+	
+
+</body>
+</html>

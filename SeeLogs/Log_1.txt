@@ -1,0 +1,29 @@
+1. 08-02-2020 Warn Amol App1 Storage is almost full.
+2. 11-02-2020 Info Manoj App2 Storage is 50% used.
+3. 20-02-2020 Error Parth App3 Application not responding.
+
+4. 06-05-2020 Warn Amol App24 Please Check Network Connection.
+5. 20-05-2020 Info Manoj App25 Storage is 20% used.
+6. 25-05-2020 Error Parth App26 Unknow Error has Occured.
+
+7. 15-09-2020 Warn Amol outlook has recieved too much spam male.
+8. 19-09-2020 Info Manoj App66 Crashes.
+9. 20-09-2020 Error Parth App37 Responded but due to Network issue it crashes.
+
+10. 21-11-2020 Warn Amol App78 Kindly check VM network.
+11. 24-11-2020 Info Manoj VM has all set to perform Remote Operation.
+12. 26-11-2020 Error Parth VM has been crashed.
+
+13. 02-12-2020 Warn Amol There is No  such service called BIS.
+14. 07-12-2020 Info Manoj Try after Sometime server is not responding.
+15. 09-12-2020 Error Parth SQlException Error has Occured.
+
+
+13. 04-12-2020 Warn Amol There is No  such service called BIS.
+14. 09-05-2020 Info Manoj Try after Sometime server is not responding.
+15. 22-08-2020 Error Parth SQlException Error has Occured.
+
+
+
+
+

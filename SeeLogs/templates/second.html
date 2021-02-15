@@ -1,0 +1,124 @@
+<!--
+ 		.SYNOPSIS
+ 				
+ 				This is  HTML page  where User will see logs.		
+
+ 		. Description
+				This Script simply contains for loop  which will run 'LEN'(paramter passed from main.py script) times.
+				This script also contains pagination.
+		
+
+		.INPUTS
+				None
+		.OUTPUTS
+                Display Log on second html page if found any.
+        
+
+        .NOTES
+        		Author: Amol Chaudhari
+        		Creation Date: 10-02-2021
+        		purpose: CIS Automation OJT Task
+        		Assigned By: Nikhil Kumar
+
+        .Example
+        		To run this Web Application type: Python main.py 
+        		Then open any browser and type : http://127.0.0.1:5000/ 
+        		!-->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+
+	<title>CIS Automation Assesment</title>
+	<style>
+		input{
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			  color: #010D0C;
+			  font-size: 16px;
+	}
+	input[type=submit]:hover {
+	    background-color: #45a049;
+	}
+
+#label{
+	font-size: 16px;
+}
+.Container{
+			position: fixed;
+			height: 150px;
+			width: 500px;
+			bottom: 350px;
+			right: 600px;
+			color: blue;
+
+
+		}
+.maindiv{
+	background-color:powderblue;
+	position: fixed;
+	height: 90%;
+	width: 700px;
+	top: 50px;
+	right: 400px;
+}
+	
+	</style>
+</head>
+<body style="background-color: #052623" >
+	<div class="maindiv"> 
+	
+	<div class="container">
+		<br>
+		
+		<p><a style="font-size: 20px;font-weight: 900; color:#1E064F;font-family: 'Comic sans MS'" href="{{ url_for('home') }}">HOME</a></p>
+		
+		<br>
+		<br>
+		<h3 style="font-size: 26px; font-family: 'Comic sans MS'"> Name: {{ user }}</h3>
+		<h3 style="font-size: 26px;font-family: 'Comic sans MS'" > Type: {{ TYPE }}</h3>
+		<h3 style="font-size: 26px;font-family: 'Comic sans MS'"> Date: {{ DATE }}</h3>
+		<br>
+		<br>
+		{% if LEN!=0 %}
+		
+
+		<h3 style="font-size: 26px;color:blue; font-family: 'Comic sans MS'" > Log Message:</h3>
+		{% for i in range(0,LEN) %}
+
+		<li style="font-size: 20px;color:#CA8023; font-family: 'Comic sans MS'" >{{ msg[i] }}</li>
+		{% endfor %}
+		<br>
+		<br>
+		{{ pagination.links }}
+		{% endif %}
+
+
+
+		{% if LEN==0 %}
+		<h3 style="font-size: 26px;color:blue; font-family: 'Comic sans MS'" > {{ msg }}</h3>
+		{{ pagination.links }}
+		{% endif %}
+
+		
+	</div>
+	
+</div>
+
+	
+
+</body>
+</html>

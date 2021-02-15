@@ -1,0 +1,38 @@
+1. 01-09-2018 Warn Manoj App1 Storage is almost full.
+2. 02-09-2018 Info Parth App2 Storage is 50% used.
+3. 03-09-2018 Error Amol App3 Application not responding.
+
+4. 20-07-2018 Warn Manoj App24 Please Check Network Connection.
+5. 21-07-2018 Info Parth App25 Storage is 20% used.
+6. 22-07-2018 Error Amol App26 Unknow Error has Occured.
+
+7. 11-10-2018 Warn Manoj outlook has recieved too much spam male.
+8. 12-10-2018 Info Parth App66 Crashes.
+9. 13-10-2018 Error Amol App37 Responded but due to Network issue it crashes.
+
+10. 09-11-2018 Warn Manoj App78 Kindly check VM network.
+11. 10-11-2018 Info Parth VM has all set to perform Remote Operation.
+12. 11-11-2018 Error Amol VM has been crashed.
+
+13. 04-12-2018 Warn Manoj There is NO such service called BIS.
+14. 09-12-2018 Info Parth Try after Sometime server is not responding.
+15. 10-12-2018 Error Amol SQlException Error has Occured.
+
+16. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+17. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+18. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+19. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+20. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+21. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+
+
+16. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+17. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+18. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+19. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+20. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+21. 11-10-2019 Error Manoj App37 Responded but due to Network issue it crashes.
+
+22. 11-02-2020 Info Manoj App2 Storage is 70% used.
+
+

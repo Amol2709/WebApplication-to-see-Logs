@@ -1,0 +1,122 @@
+<!--
+ 		.SYNOPSIS
+ 				
+ 				This is Home HTML page  where User will enter Date,Name and select Type (Error,Warning,Message)		
+
+ 		. Description
+				This Script Contain Form whic has action attribute assigned as home route.
+				There is three dropdown option in this page from where user can select Date,Name and Type.
+				Once Submit button is pressed User will be able to see logs.
+
+		
+
+		.INPUTS
+				None
+		.OUTPUTS
+                Display Log on second html page if found any.
+        
+
+        .NOTES
+        		Author: Amol Chaudhari
+        		Creation Date: 10-02-2021
+        		purpose: CIS Automation OJT Task
+        		Assigned By: Nikhil Kumar
+
+        .Example
+        		To run this Web Application type: Python main.py 
+        		Then open any browser and type : http://127.0.0.1:5000/ 
+        		!-->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous"> 
+
+	<title>CIS Automation Assesment</title>
+	<style>
+		input{
+			  width: 100%;
+			  padding: 12px 20px;
+			  margin: 8px 0;
+			  display: inline-block;
+			  border: 1px solid #ccc;
+			  border-radius: 4px;
+			  box-sizing: border-box;
+			  color: #010D0C;
+			  font-size: 16px;
+	}
+	input[type=submit]:hover {
+	    background-color: #45a049;
+	}
+
+#label{
+	font-size: 16px;
+}
+.Container{
+			position: fixed;
+			height: 250px;
+			width: 500px;
+			bottom: 350px;
+			right: 600px;
+			color: blue;
+
+
+		}
+.maindiv{
+	background-color:powderblue;
+	position: fixed;
+	height: 400px;
+	width: 700px;
+	top: 100px;
+	right: 400px;
+}
+	
+	</style>
+</head>
+<body style="background-color: #052623">
+	<div class="maindiv"> 
+	<div class="container">
+		<form action="{{ url_for('home')}}" method="post">
+			<br>
+
+			<label id="label"style="font-size: 26px;font-family: 'Comic sans MS'">SelectDate: </label><span style="color: red !important; display: inline; float: none;">*</span>
+			<input type="date" name="DATE" required>
+			<br>
+			<br>
+			<label id="label" style="font-size: 26px;font-family: 'Comic sans MS'" >SelectName: </label><span style="color: red !important; display: inline; float: none;">*</span>
+			<select name="name" style="font-family: 'Comic sans MS';">
+                <option value="Amol" style="font-family: 'Comic sans MS';">Amol</option>
+                <option style="font-family: 'Comic sans MS';" value="Manoj">Manoj</option>
+                <option style="font-family: 'Comic sans MS';" value="Parth">Parth</option>
+                <option style="font-family: 'Comic sans MS';" value="All">All</option>
+            </select>
+            <br>
+            <br>
+
+			<label style="font-size: 26px;font-family: 'Comic sans MS'">SelectType: </label><span style="color: red !important; display: inline; float: none;">*</span>      
+        
+            <select style="size: 40px;font-family: 'Comic sans MS'" name="type">
+                <option style="font-family: 'Comic sans MS';" value="Warn">Warning</option>
+                <option style="font-family: 'Comic sans MS';" value="Info">Info</option>
+                <option style="font-family: 'Comic sans MS';" value="Error">Error</option>
+                <option style="font-family: 'Comic sans MS';" value="All">All</option>
+            </select>
+            <br>
+            <br>
+            
+            <input type="submit" style="font-family: 'Comic sans MS';" value="ShowDetails" name="submit">
+              
+		</form>
+	</div>
+</div>
+
+	
+
+</body>
+</html>
